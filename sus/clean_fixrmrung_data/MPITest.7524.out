@@ -1,0 +1,60 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_clean_randrmrung_mpi_sse.f90 -o pro_clean_randrmrung_mpi_sse.out -O3
+read.in=
+128 2 64 0 0.0
+50 10000 10000
+
+real	30m33.175s
+user	0m0.013s
+sys	0m0.061s
+mpiexec ./pro_clean_randrmrung_mpi_sse.out
+ 0 
+read.in=
+128 2 128 0 0.0
+50 10000 10000
+
+real	61m40.938s
+user	0m0.011s
+sys	0m0.059s
+mpiexec ./pro_clean_randrmrung_mpi_sse.out
+ 1 
+read.in=
+128 2 256 0 0.0
+50 10000 10000
+
+real	140m12.130s
+user	0m0.011s
+sys	0m0.059s
+mpiexec ./pro_clean_randrmrung_mpi_sse.out
+ 2 
+read.in=
+128 2 512 0 0.0
+50 10000 10000
+
+real	316m5.171s
+user	0m0.009s
+sys	0m0.061s
+mpiexec ./pro_clean_randrmrung_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 0 0.0
+50 10000 10000
+
+real	656m10.738s
+user	0m0.015s
+sys	0m0.054s
+mpiexec ./pro_clean_randrmrung_mpi_sse.out
+ 4 

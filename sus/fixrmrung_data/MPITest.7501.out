@@ -1,0 +1,105 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_rmrung_disorder_mpi_sse.f90 -o pro_rmrung_disorder_mpi_sse.out
+read.in=
+128 2 64 1 1.0
+50 10 10
+
+real	0m1.818s
+user	0m0.012s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 1.0
+50 10 10
+
+real	0m1.635s
+user	0m0.011s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 1.0
+50 10 10
+
+real	0m1.642s
+user	0m0.016s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 1.0
+50 10 10
+
+real	0m1.658s
+user	0m0.015s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 1.0
+50 10 10
+
+real	0m1.658s
+user	0m0.014s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.0
+50 10 10
+
+real	0m1.658s
+user	0m0.017s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.0
+50 10 10
+
+real	0m1.642s
+user	0m0.021s
+sys	0m0.046s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.0
+50 10 10
+
+real	0m1.654s
+user	0m0.008s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.0
+50 10 10
+
+real	0m1.715s
+user	0m0.010s
+sys	0m0.058s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.0
+50 10 10
+
+real	0m1.662s
+user	0m0.014s
+sys	0m0.053s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 

@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name=cross4 # Job name
+#SBATCH -o MPITest.%j.out  # Name of stdout output file (%j expands to jobId)
+#SBATCH --partition=cpu       # Queue name
+#SBATCH --nodes=1                 # Total number of nodes requested
+#SBATCH --ntasks-per-node=100       # Number of procersses per node
+
+echo "MPI Test"
+source /opt/intel/oneapi/setvars.sh
+sh mpiqmproj.sh pro_pbc_probasic_4crossing_mpi.f90

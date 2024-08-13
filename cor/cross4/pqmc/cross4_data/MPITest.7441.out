@@ -1,0 +1,57 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_pbc_probasic_4crossing_mpi.f90 -O3 -o pro_pbc_probasic_4crossing_mpi.out
+read.in=
+16 4 14 1
+0 10 10000 5000
+
+real	308m40.089s
+user	0m0.010s
+sys	0m0.061s
+mpiexec ./pro_pbc_probasic_4crossing_mpi.out
+ 0 
+read.in=
+32 4 14 1
+0 10 10000 5000
+
+real	718m16.237s
+user	0m0.018s
+sys	0m0.050s
+mpiexec ./pro_pbc_probasic_4crossing_mpi.out
+ 1 
+read.in=
+64 4 14 1
+0 10 10000 5000
+
+real	1523m27.578s
+user	0m0.009s
+sys	0m0.061s
+mpiexec ./pro_pbc_probasic_4crossing_mpi.out
+ 2 
+read.in=
+96 4 14 1
+0 10 10000 5000
+
+real	2464m40.322s
+user	0m0.013s
+sys	0m0.053s
+mpiexec ./pro_pbc_probasic_4crossing_mpi.out
+ 3 
+read.in=
+128 4 14 1
+0 10 10000 5000
+slurmstepd: error: *** STEP 7441.4 ON cpunode02 CANCELLED AT 2023-11-20T15:23:18 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 7441 ON cpunode02 CANCELLED AT 2023-11-20T15:23:18 ***

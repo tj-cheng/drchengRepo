@@ -1,0 +1,21 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort locsus_cross4.f90 -o locsus_cross4.out
+read.in=
+128 4 2048 1 1
+10 10000 10000
+slurmstepd: error: *** STEP 7588.0 ON cpunode02 CANCELLED AT 2024-01-17T16:38:50 ***
+slurmstepd: error: *** JOB 7588 ON cpunode02 CANCELLED AT 2024-01-17T16:38:50 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

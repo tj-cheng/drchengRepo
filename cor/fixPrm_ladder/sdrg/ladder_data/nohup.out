@@ -1,0 +1,217 @@
+mpif90 pro_noindsdrgpro.f90 -o pro_noindsdrgpro.out
+read.in=
+128 2 1.0
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m3.194s
+user	0m57.035s
+sys	0m9.098s
+read.in=
+256 2 1.0
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m9.295s
+user	3m21.125s
+sys	0m11.783s
+read.in=
+512 2 1.0
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m31.420s
+user	12m8.386s
+sys	0m13.927s
+read.in=
+1024 2 1.0
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	2m2.982s
+user	48m37.005s
+sys	0m18.130s
+read.in=
+128 2 0.99
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m3.578s
+user	1m5.850s
+sys	0m9.618s
+read.in=
+256 2 0.99
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m11.215s
+user	4m6.800s
+sys	0m11.645s
+read.in=
+512 2 0.99
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m38.004s
+user	14m45.468s
+sys	0m14.702s
+read.in=
+1024 2 0.99
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	2m30.205s
+user	59m21.034s
+sys	0m26.172s
+read.in=
+128 2 0.98
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m4.190s
+user	1m20.315s
+sys	0m9.872s
+read.in=
+256 2 0.98
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m12.552s
+user	4m35.375s
+sys	0m15.043s
+read.in=
+512 2 0.98
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m43.839s
+user	17m5.150s
+sys	0m14.743s
+read.in=
+1024 2 0.98
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	2m53.714s
+user	68m47.972s
+sys	0m22.701s
+read.in=
+128 2 0.94
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m5.580s
+user	1m53.052s
+sys	0m10.388s
+read.in=
+256 2 0.94
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m17.982s
+user	6m45.833s
+sys	0m14.760s
+read.in=
+512 2 0.94
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	1m8.025s
+user	26m38.740s
+sys	0m20.486s
+read.in=
+1024 2 0.94
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	4m33.350s
+user	107m21.355s
+sys	1m35.816s
+read.in=
+128 2 0.9
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m6.937s
+user	2m25.475s
+sys	0m10.365s
+read.in=
+256 2 0.9
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m24.146s
+user	9m13.885s
+sys	0m14.029s
+read.in=
+512 2 0.9
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	1m31.419s
+user	35m49.921s
+sys	0m29.728s
+read.in=
+1024 2 0.9
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	6m11.003s
+user	146m13.599s
+sys	1m42.976s
+read.in=
+128 2 0.8
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m10.633s
+user	3m52.416s
+sys	0m11.941s
+read.in=
+256 2 0.8
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	0m38.466s
+user	14m57.367s
+sys	0m13.985s
+read.in=
+512 2 0.8
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	2m31.713s
+user	59m59.449s
+sys	0m24.493s
+read.in=
+1024 2 0.8
+0 5000
+mpirun -np 24 ./pro_noindsdrgpro.out 
+ 5 
+
+real	10m33.156s
+user	248m11.346s
+sys	4m25.183s

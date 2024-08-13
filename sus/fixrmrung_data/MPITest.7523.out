@@ -1,0 +1,875 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_rmrung_disorder_mpi_sse.f90 -o pro_rmrung_disorder_mpi_sse.out -O3
+read.in=
+128 2 64 1 0.7
+50 10000 10000
+
+real	27m57.370s
+user	0m0.010s
+sys	0m0.062s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.7
+50 10000 10000
+
+real	56m39.419s
+user	0m0.014s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.7
+50 10000 10000
+
+real	149m47.641s
+user	0m0.008s
+sys	0m0.058s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.7
+50 10000 10000
+
+real	346m56.018s
+user	0m0.013s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.7
+50 10000 10000
+
+real	728m38.948s
+user	0m0.015s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.6
+50 10000 10000
+
+real	29m3.351s
+user	0m0.013s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.6
+50 10000 10000
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 7523.6 ON cpunode02 CANCELLED AT 2023-12-14T00:43:36 ***
+slurmstepd: error: *** JOB 7523 ON cpunode02 CANCELLED AT 2023-12-14T00:43:36 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F6857591C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450D  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F6856E5B493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F878850CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004063E3  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F8787DD6493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD659CDAC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004045CC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD6595A4493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FEBBA9CAC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040492B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FEBBA294493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FE740E5AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404556  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FE740724493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FAC645DAC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040453E  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FAC63EA4493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F8A6B829C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039CC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F8A6B0F3493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F33F7CE8C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004063E7  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F33F75B2493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F5AF4F1DC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406555  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F5AF47E7493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F5BF4B56C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450F  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F5BF4420493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FB4F9F59C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044FC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FB4F9823493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F24CBD3EC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404527  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F24CB608493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FA7428A4C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404717  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FA74216E493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FC0D79C5C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040452A  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FC0D728F493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F43F96DCC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044C6  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F43F8FA6493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FA5C2DB4C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E31  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FA5C267E493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FCECA458C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404519  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FCEC9D22493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F2676348C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044DE  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F2675C12493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F482C51CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406597  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F482BDE6493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F20C0C80C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403997  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F20C054A493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F62F59A6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DE3  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F62F5270493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F31FA988C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403999  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F31FA252493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F7A9FBBFC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DA8  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F7A9F489493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD2C3B65C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403A69  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD2C342F493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FF5EF0D4C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406555  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FF5EE99E493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FA20227DC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404546  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FA201B47493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD00E690C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039CC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD00DF5A493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD0E80F6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403999  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD0E79C0493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007EFE83EF2C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040659B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007EFE837BC493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FBF3B269C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404B4D  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FBF3AB33493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FC401124C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403999  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FC4009EE493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F1C10C6AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404920  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1C10534493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FDDAAB88C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403935  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FDDAA452493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F3F1B2B6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039EC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F3F1AB80493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F431B6C5C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406406  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F431AF8F493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD69EF19C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039CC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD69E7E3493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F7D4A92DC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406567  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F7D4A1F7493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F79AA1F1C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039E0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F79A9ABB493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FE4A8AF7C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406567  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FE4A83C1493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FEAE4DE8C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039B5  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FEAE46B2493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FDDA8C26C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DC2  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FDDA84F0493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FDA50A9AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044CA  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FDA50364493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F4901162C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DC2  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F4900A2C493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD00E32CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040639E  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD00DBF6493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F61B32F6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040451B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F61B2BC0493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F899F631C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E92  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F899EEFB493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F81106D8C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044FC  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F810FFA2493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F181E2E7C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403993  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F181DBB1493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FC3BEDE6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E18  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FC3BE6B0493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F1CDEACFC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004045AB  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1CDE399493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD9DA302C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404BFB  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD9D9BCC493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F9347061C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403987  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F934692B493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F16C5B37C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DAE  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F16C5401493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F6F0C58CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403967  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F6F0BE56493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FA48572DC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040485C  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FA484FF7493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F1948C65C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DA8  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F194852F493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F65BF959C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004046FB  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F65BF223493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007EFD64990C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404559  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007EFD6425A493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F56D5A84C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404913  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F56D534E493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F1C8ED11C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450F  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1C8E5DB493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F2B17C1AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404700  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F2B174E4493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F3D27AD6C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450F  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F3D273A0493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F177359DC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044CE  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1772E67493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F3E8A085C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004063C1  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F3E8994F493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FA432BFFC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040492B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FA4324C9493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FE90AC97C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404717  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FE90A561493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F62C21EDC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039E0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F62C1AB7493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F183768AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403993  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1836F54493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F25A3F3FC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004046E0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F25A3809493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F9F0A43CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E8B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F9F09D06493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F8D01BFBC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DAE  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F8D014C5493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F58E6933C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404562  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F58E61FD493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FC60CA64C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040492B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FC60C32E493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FD9F082BC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E92  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FD9F00F5493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F0711FE5C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404515  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F07118AF493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F714798EC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450D  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F7147258493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F429ED7CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E2B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F429E646493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F61B2641C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039D0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F61B1F0B493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F61A8747C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404758  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F61A8011493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F8CFFE1AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000406412  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F8CFF6E4493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F45B7F8AC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040399C  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F45B7854493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F3EB86EDC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040489C  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F3EB7FB7493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F17076CCC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404774  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F1706F96493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F4C4A77CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404B4D  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F4C4A046493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FC500A49C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000404717  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FC500313493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F5AC1E08C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040450F  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F5AC16D2493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FAFBB0A9C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004044DE  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FAFBA973493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F9EA2B7CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004049A8  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F9EA2446493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FAE194F7C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DE3  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FAE18DC1493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F04E5783C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403993  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F04E504D493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F2FFC8E3C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403C94  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F2FFC1AD493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FE6C5640C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403997  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FE6C4F0A493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F231108CC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  000000000040655E  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F2310956493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F5068179C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403C45  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F5067A43493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F60C8B7BC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403E8B  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F60C8445493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F54EFFBCC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004048B2  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F54EF886493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FDF2AE11C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DD0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FDF2A6DB493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007F9EF64E1C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403997  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007F9EF5DAB493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FCA8A7ABC20  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403DD0  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FCA8A075493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pro_rmrung_disord  000000000041423B  Unknown               Unknown  Unknown
+libpthread-2.28.s  00007FDA468B3C20  Unknown               Unknown  Unknown
+pro_rmrung_disord  00000000004039B5  Unknown               Unknown  Unknown
+pro_rmrung_disord  0000000000403162  Unknown               Unknown  Unknown
+libc-2.28.so       00007FDA4617D493  __libc_start_main     Unknown  Unknown
+pro_rmrung_disord  000000000040306E  Unknown               Unknown  Unknown

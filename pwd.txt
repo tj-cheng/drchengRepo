@@ -1,0 +1,20 @@
+/home/drcheng/afterTPS2023/sselocsus/rmrung/fixrmrung
+--> "Finite Temperature demo", "local susceptibility", "SSE", "removal probability", and "fixed number of rungs"
+
+/home/drcheng/afterTPS2023/sselocsus/rmrung/fixrmrung/cleanrandrmrung
+--> ..., but "clean".
+
+/home/drcheng/afterTPS2023/sselocsus/cross4
+--> ..., but "in the cross4 lattice" which like "#", (this is not the equivalent lattice which likes "chain has antenna") 
+
+/home/drcheng/afterTPS2023/cross4/pbc/newversion
+--> "Ground state property", "pair correlation", "end-to-end spins correlation", "cross4", and "equivalent lattice"
+
+/home/drcheng/generalsdrg/spareladder/noinduce_prm_invL
+--> "GS properties", "SDRG", "no induce", and "fixed number of rung"
+
+/home/drcheng/generalsdrg/sparcesdrg/gap
+
+/home/drcheng/generalsdrg/sparcesdrg/numf/evolution/dist/gap
+
+/home/drcheng/generalsdrg/sparcesdrg/prm_invL

@@ -1,0 +1,510 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_rmrung_disorder_mpi_sse.f90 -o pro_rmrung_disorder_mpi_sse.out -O3
+read.in=
+128 2 64 1 1.0
+50 10000 10000
+
+real	0m30.566s
+user	0m0.016s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 1.0
+50 10000 10000
+
+real	0m47.787s
+user	0m0.016s
+sys	0m0.050s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 1.0
+50 10000 10000
+
+real	1m18.347s
+user	0m0.014s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 1.0
+50 10000 10000
+
+real	2m15.497s
+user	0m0.012s
+sys	0m0.057s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 1.0
+50 10000 10000
+
+real	4m6.097s
+user	0m0.010s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.9
+50 10000 10000
+
+real	0m30.636s
+user	0m0.005s
+sys	0m0.065s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.9
+50 10000 10000
+
+real	0m48.255s
+user	0m0.005s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.9
+50 10000 10000
+
+real	1m19.193s
+user	0m0.013s
+sys	0m0.052s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.9
+50 10000 10000
+
+real	2m16.120s
+user	0m0.015s
+sys	0m0.053s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.9
+50 10000 10000
+
+real	4m7.926s
+user	0m0.015s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.8
+50 10000 10000
+
+real	0m31.066s
+user	0m0.017s
+sys	0m0.050s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.8
+50 10000 10000
+
+real	0m48.458s
+user	0m0.010s
+sys	0m0.053s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.8
+50 10000 10000
+
+real	1m19.822s
+user	0m0.010s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.8
+50 10000 10000
+
+real	2m17.519s
+user	0m0.015s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.8
+50 10000 10000
+
+real	4m10.862s
+user	0m0.014s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.7
+50 10000 10000
+
+real	0m31.696s
+user	0m0.012s
+sys	0m0.058s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.7
+50 10000 10000
+
+real	0m49.665s
+user	0m0.014s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.7
+50 10000 10000
+
+real	1m21.485s
+user	0m0.015s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.7
+50 10000 10000
+
+real	2m20.866s
+user	0m0.013s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.7
+50 10000 10000
+
+real	4m15.938s
+user	0m0.016s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.6
+50 10000 10000
+
+real	0m31.585s
+user	0m0.009s
+sys	0m0.061s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.6
+50 10000 10000
+
+real	0m49.619s
+user	0m0.014s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.6
+50 10000 10000
+
+real	1m21.343s
+user	0m0.015s
+sys	0m0.052s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.6
+50 10000 10000
+
+real	2m21.010s
+user	0m0.013s
+sys	0m0.052s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.6
+50 10000 10000
+
+real	4m16.760s
+user	0m0.010s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.5
+50 10000 10000
+
+real	0m31.723s
+user	0m0.007s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.5
+50 10000 10000
+
+real	0m49.796s
+user	0m0.016s
+sys	0m0.046s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.5
+50 10000 10000
+
+real	1m22.348s
+user	0m0.013s
+sys	0m0.050s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.5
+50 10000 10000
+
+real	2m22.756s
+user	0m0.014s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.5
+50 10000 10000
+
+real	4m20.220s
+user	0m0.017s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.4
+50 10000 10000
+
+real	0m32.093s
+user	0m0.014s
+sys	0m0.052s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.4
+50 10000 10000
+
+real	0m50.241s
+user	0m0.015s
+sys	0m0.047s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.4
+50 10000 10000
+
+real	1m22.847s
+user	0m0.016s
+sys	0m0.048s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.4
+50 10000 10000
+
+real	2m24.150s
+user	0m0.011s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.4
+50 10000 10000
+
+real	4m22.010s
+user	0m0.011s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.3
+50 10000 10000
+
+real	0m32.172s
+user	0m0.016s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.3
+50 10000 10000
+
+real	0m50.590s
+user	0m0.011s
+sys	0m0.052s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.3
+50 10000 10000
+
+real	1m23.321s
+user	0m0.013s
+sys	0m0.049s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.3
+50 10000 10000
+
+real	2m25.348s
+user	0m0.009s
+sys	0m0.058s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.3
+50 10000 10000
+
+real	4m24.154s
+user	0m0.007s
+sys	0m0.060s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.2
+50 10000 10000
+
+real	0m32.913s
+user	0m0.006s
+sys	0m0.061s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.2
+50 10000 10000
+
+real	0m51.633s
+user	0m0.008s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.2
+50 10000 10000
+
+real	1m25.286s
+user	0m0.006s
+sys	0m0.056s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.2
+50 10000 10000
+
+real	2m28.266s
+user	0m0.013s
+sys	0m0.057s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.2
+50 10000 10000
+
+real	4m30.964s
+user	0m0.011s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.1
+50 10000 10000
+
+real	0m33.010s
+user	0m0.012s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.1
+50 10000 10000
+
+real	0m51.626s
+user	0m0.015s
+sys	0m0.047s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.1
+50 10000 10000
+
+real	1m25.322s
+user	0m0.007s
+sys	0m0.055s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.1
+50 10000 10000
+
+real	2m28.582s
+user	0m0.009s
+sys	0m0.057s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.1
+50 10000 10000
+
+real	4m31.496s
+user	0m0.010s
+sys	0m0.058s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 
+read.in=
+128 2 64 1 0.0
+50 10000 10000
+
+real	0m33.257s
+user	0m0.017s
+sys	0m0.050s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 0 
+read.in=
+128 2 128 1 0.0
+50 10000 10000
+
+real	0m52.153s
+user	0m0.014s
+sys	0m0.051s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 1 
+read.in=
+128 2 256 1 0.0
+50 10000 10000
+
+real	1m26.937s
+user	0m0.015s
+sys	0m0.048s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 2 
+read.in=
+128 2 512 1 0.0
+50 10000 10000
+
+real	2m30.814s
+user	0m0.011s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 3 
+read.in=
+128 2 1024 1 0.0
+50 10000 10000
+
+real	4m34.193s
+user	0m0.014s
+sys	0m0.054s
+mpiexec ./pro_rmrung_disorder_mpi_sse.out
+ 4 

@@ -1,0 +1,24 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort locsus_cross4.f90 -o locsus_cross4.out
+read.in=
+128 4 1024 1 1
+10 10000 10000
+
+real	2969m49.778s
+user	0m0.013s
+sys	0m0.062s
+mpiexec ./locsus_cross4.out
+ 0 

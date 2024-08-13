@@ -1,0 +1,24 @@
+MPI Test
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+:: clck -- latest
+:: compiler -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: inspector -- latest
+:: itac -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: oneAPI environment initialized ::
+ 
+mpiifort pro_pbc_probasic_4crossing_mpi.f90 -O3 -o pro_pbc_probasic_4crossing_mpi.out
+read.in=
+128 4 14 1
+0 10 10000 5000
+
+real	3322m50.883s
+user	0m0.014s
+sys	0m0.057s
+mpiexec ./pro_pbc_probasic_4crossing_mpi.out
+ 0 
